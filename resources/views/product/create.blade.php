@@ -10,7 +10,7 @@
                 <input type="text" name="name" class="form-control" placeholder="Nombre">
             </div>
             <div class="col">
-                <input type="text" name="description" class="form-control" placeholder="descripcion">
+                <textarea type="text" name="description" class="form-control" placeholder="descripcion"></textarea>
             </div>
         </div>
         <div class="row mb-3">
@@ -18,7 +18,7 @@
                 <input type="text" name="cod_prod" class="form-control" placeholder="código">
             </div>
             <div class="col">
-                <textarea class="form-control" name="price" placeholder="precio"></textarea>
+                <input class="form-control" name="price" placeholder="precio">
             </div>
         </div>
         <div class="row">
