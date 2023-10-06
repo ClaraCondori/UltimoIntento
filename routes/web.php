@@ -4,6 +4,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,6 @@ Route::post('/login', [AuthController::class, 'loginPost'])->name('login');
 
 Route::get('/home', [HomeController::class, 'index']);
 Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
+
+
+Route::resource('/product', ProductController::class);
