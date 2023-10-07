@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class ProductController extends Controller
 {
@@ -27,8 +28,11 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        Product::create($request->all());
- 
+        Product::create( 
+            ['nombre' => $request->input('nombre'),
+            'descripcion' => $request->input('descripcion'),
+            'cod_prod' => $request->input('cod_prod'),
+            'precio' => $request->input('precio')]);
         return redirect()->route('product.index')->with('success', 'Producto añadido correctamente');
     }
 
