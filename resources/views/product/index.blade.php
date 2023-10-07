@@ -34,7 +34,7 @@
                             <div class="btn-group" role="group" aria-label="Basic example">
                                 <a href="{{ route('product.show', $rs->id) }}" type="button" class="btn btn-secondary">Detalle</a>
                                 <a href="{{ route('product.edit', $rs->id)}}" type="button" class="btn btn-warning">Editar</a>
-                                <form action="{{ route('product.destroy', $rs->id) }}" method="POST" type="button" class="btn btn-danger p-0" onsubmit="return confirm('Delete?')">
+                                <form action="{{ route('product.destroy', $rs->id) }}" method="POST" type="button" class="btn btn-danger p-0" onsubmit="return confirm('¿Eliminar?')">
                                     @csrf
                                     @method('DELETE')
                                     <button class="btn btn-danger m-0">Eliminar</button>
