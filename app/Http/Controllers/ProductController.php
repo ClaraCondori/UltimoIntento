@@ -12,7 +12,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('product.index');
+        $product = Product::orderBy('created_at', 'DESC')->get();
+        return view('product.index', compact('product'));
     }
 
     /**
