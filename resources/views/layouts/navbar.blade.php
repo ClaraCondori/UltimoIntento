@@ -9,9 +9,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/home">Pagina Principal</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('product.index') }}">Volver</a>
-                </li>
             </ul>
         </div>
     </div>
