@@ -36,7 +36,13 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                    <form action="{{ route('register') }}">
+                        <div>
+                        <div class="d-grid">
+                                <button class="btn btn-primary">Registrar</button>
+                            </div>
+                        </div>
+                    </form>
             </div>
         </div>
     </div>

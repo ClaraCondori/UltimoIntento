@@ -32,4 +32,7 @@
         <h1> Bienvenido, {{ Auth::user()->name }}</h1>
     </div>
 </body>
+<footer>
+    
+</footer>
 </html>

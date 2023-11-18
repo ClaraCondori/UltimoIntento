@@ -24,7 +24,7 @@
                         @csrf
                         <div class="mb-3">
                             <label for="name" class="form-label">Nombre</label>
-                            <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Juan Perez" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo</label>
@@ -38,6 +38,11 @@
                             <div class="d-grid">
                                 <button class="btn btn-primary">Registrar</button>
                             </div>
+                        </div>
+                    </form>
+                    <form action="{{ route('login') }}">
+                        <div class="d-grid">
+                            <button class="btn btn-primary">Volver</button>
                         </div>
                     </form>
                 </div>
