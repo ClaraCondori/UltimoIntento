@@ -34,3 +34,5 @@ Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::resource('/product', ProductController::class);
 
 Route::get('chat', 'App\Http\Controllers\ChatController@show')->name('chat.show');
+
+Route::post('/enviarcorreo', [App\Http\Controllers\EmailController::class, 'enviarcorreo'])->name('enviarcorreo');

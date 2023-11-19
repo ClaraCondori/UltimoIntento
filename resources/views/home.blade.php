@@ -19,6 +19,9 @@
                 <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{ route('product.index') }}">Nuestros Productos</a>
                 </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/chat">Consultas</a>
+                </li>
             </ul>
             <form action="{{ route('logout') }}" method="POST" class="d-flex" role="search">
                 @csrf
@@ -33,6 +36,31 @@
     </div>
 </body>
 <footer>
-    
+    <div class="container">
+        <form action="{{route('enviarcorreo')}}" method="POST">
+        @csrf
+        <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+    <input type="text" name="nombre "class="form-control" id="nombre" placeholder="Juan Perez">
+    </div>
+    <div class="container">
+    <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+    <input type="text" name="asunto" class="form-control" id="asunto" placeholder="asunto">
+    </div>
+    <div class="container">
+    <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+    <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@gmail.com">
+    </div>
+    <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+    <textarea class="form-control" name="mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="mb-3">
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+        </form>
+    </div>
 </footer>
 </html>
