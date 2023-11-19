@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta rel="stylesheet" href="/css/app.css">
-    <meta rel="stylesheet" href="/css/chat.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="/css/chat.css">
 </head>
 <body>
     <section class="msger">
@@ -24,11 +24,13 @@
     </header>
 
     <div class="msger-chat"></div>
-    <form class="msg-inputarea">
-        <input type="text" class="msger-input" oninput="sendTypeEvent()" placeholder="Mensaje">
+    <form class="msger-inputarea">
+        <input type="text" class="msger-input" oninput="sendTypingEvent()" placeholder="Mensaje">
         <button type="submit" class="msger-send-btn">Enviar</button>
     </form>
 </section>
-
+<script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/chat.js"></script>
 </body>
 </html>

@@ -9,6 +9,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/home">Pagina Principal</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/chat">Consultas</a>
+                </li>
             </ul>
         </div>
     </div>
