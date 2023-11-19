@@ -42,4 +42,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    public function chats() 
+    {
+        return $this->belongsToMany('Apps/Models/Chat');
+    }
+    public function messages(){
+        return $this->hasMany('App/Models/Message');
+    }
 }
+
