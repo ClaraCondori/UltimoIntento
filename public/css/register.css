@@ -1,0 +1,28 @@
+body {
+    background-color: #f0f8ff; /* Color de fondo en tono azul claro */
+  }
+  
+  .card {
+    border: 2px solid #87CEFA; /* Borde de la tarjeta en tono azul claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .card-title {
+    color: #4169E1; /* Color del título en tono azul real */
+  }
+  
+  .form-label {
+    color: #1E90FF; /* Color de las etiquetas en tono azul brillante */
+  }
+  
+  .btn-primary {
+    background-color: #4169E1; /* Fondo del botón en tono azul real */
+    border-color: #4169E1; /* Borde del botón en tono azul real */
+  }
+  
+  .btn-primary:hover {
+    background-color: #1E90FF; /* Cambio de color al pasar el mouse en tono azul brillante */
+    border-color: #1E90FF;
+  }
+  

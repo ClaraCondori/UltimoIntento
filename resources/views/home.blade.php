@@ -34,6 +34,10 @@
         <div class="container">
         <h1> Bienvenido, {{ Auth::user()->name }}</h1>
     </div>
+    <div class="container">
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum a inventore quo commodi doloremque? Adipisci laboriosam minus facere suscipit ex praesentium, totam a amet consectetur autem vitae voluptate nostrum animi?</h2>
+    </div>
+    
 </body>
 <footer>
     <div class="container">

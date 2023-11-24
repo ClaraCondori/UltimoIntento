@@ -2,16 +2,17 @@
 
 namespace Tests\Unit;
 
-/*use PHPUnit\Framework\TestCase; */
+/*use PHPUnit\FrameworkTestCase;*/
 use Tests\TestCase;
-
-class loginPageTest extends TestCase
+class LoginPageTest extends TestCase
 {
     /**
      * A basic unit test example.
      */
-    public function test_login(): void
+    public function test_example(): void
     {
-        $this->assertTrue(true);
+        $response=$this->get('/login');
+        $response->assertSee('hola mundo');
+        $response->assertStatus(200);
     }
 }
