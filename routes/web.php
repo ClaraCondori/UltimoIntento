@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ChatController;
+use App\Http\Controllers\TwilioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +36,6 @@ Route::resource('/product', ProductController::class);
 Route::get('chat', 'App\Http\Controllers\ChatController@show')->name('chat.show');
 
 Route::post('/enviarcorreo', [App\Http\Controllers\EmailController::class, 'enviarcorreo'])->name('enviarcorreo');
+
+//Route::get('/send-sms', [TwilioController::class, 'sendSms']);
+

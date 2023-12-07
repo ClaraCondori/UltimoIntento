@@ -59,6 +59,14 @@ return [
         'null' => [
             'driver' => 'null',
         ],
+        'connections' => [
+            // ...
+            'telegram' => [
+                'driver' => 'telegram',
+                'token' => env('TELEGRAM_BOT_TOKEN'),
+            ],
+        ],
+        
 
     ],
 

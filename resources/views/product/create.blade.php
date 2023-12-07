@@ -1,6 +1,7 @@
 @extends('layouts.app')
  
 @section('body')
+
     <h1 class="mb-0">Añadir nuevo</h1>
     <hr />
     <form action="{{ route('product.store') }}" method="POST">
